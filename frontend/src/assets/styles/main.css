@@ -1,0 +1,273 @@
+/* ==========================================================
+   RESET
+========================================================== */
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    min-height:100vh;
+
+    overflow-x:hidden;
+
+    font-family:"Segoe UI",Tahoma,Geneva,Verdana,sans-serif;
+
+    color:#1f2937;
+
+    background:#edf7ef;
+
+}
+
+#app{
+
+    min-height:100vh;
+
+}
+
+/* ==========================================================
+   PAGE CONTAINERS
+========================================================== */
+
+.container,
+
+.container-fluid{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+main{
+
+    min-height:calc(100vh - 140px);
+
+}
+
+/* ==========================================================
+   HEADINGS
+========================================================== */
+
+h1{
+
+    font-size:2.4rem;
+
+    font-weight:700;
+
+}
+
+h2{
+
+    font-size:2rem;
+
+    font-weight:700;
+
+}
+
+h3{
+
+    font-size:1.6rem;
+
+    font-weight:700;
+
+}
+
+h4{
+
+    font-size:1.3rem;
+
+    font-weight:600;
+
+}
+
+h5{
+
+    font-size:1.1rem;
+
+    font-weight:600;
+
+}
+
+p{
+
+    line-height:1.7;
+
+}
+
+/* ==========================================================
+   LOGIN / REGISTER
+========================================================== */
+
+.auth-page{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    position:relative;
+
+}
+
+.auth-page::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.30);
+
+    backdrop-filter:blur(4px);
+
+}
+
+.auth-card{
+
+    position:relative;
+
+    z-index:2;
+
+    width:430px;
+
+    padding:20px;
+
+}
+
+/* ==========================================================
+   CONTENT WRAPPER
+========================================================== */
+
+.page-wrapper{
+
+    background:rgba(255,255,255,.22);
+
+    backdrop-filter:blur(12px);
+
+    border-radius:24px;
+
+    padding:25px;
+
+    box-shadow:
+
+        0 15px 35px rgba(0,0,0,.12);
+
+}
+
+/* ==========================================================
+   IMAGES
+========================================================== */
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+/* ==========================================================
+   LINKS
+========================================================== */
+
+a{
+
+    color:#198754;
+
+    transition:.2s;
+
+}
+
+a:hover{
+
+    color:#157347;
+
+}
+
+/* ==========================================================
+   UTILITIES
+========================================================== */
+
+.shadow-soft{
+
+    box-shadow:
+
+        0 15px 35px rgba(0,0,0,.10);
+
+}
+
+.rounded-xl{
+
+    border-radius:24px;
+
+}
+
+.glass{
+
+    background:rgba(255,255,255,.25);
+
+    backdrop-filter:blur(16px);
+
+    border:1px solid rgba(255,255,255,.35);
+
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width:992px){
+
+    h1{
+
+        font-size:2rem;
+
+    }
+
+    h2{
+
+        font-size:1.8rem;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .page-wrapper{
+
+        padding:18px;
+
+    }
+
+    .auth-card{
+
+        width:95%;
+
+    }
+
+}

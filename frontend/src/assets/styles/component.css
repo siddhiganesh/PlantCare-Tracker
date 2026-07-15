@@ -1,0 +1,281 @@
+/* ==========================================================
+   GLOBAL APP
+========================================================== */
+
+body {
+
+    font-family: "Segoe UI", sans-serif;
+
+    background: #eef5ef;
+
+    color: #1f2937;
+
+}
+
+a {
+
+    text-decoration: none;
+
+}
+
+img {
+
+    user-select: none;
+
+}
+
+/* ==========================================================
+   GLASS CARDS
+========================================================== */
+
+.card {
+
+    background: rgba(255,255,255,0.78);
+
+    backdrop-filter: blur(18px);
+
+    -webkit-backdrop-filter: blur(18px);
+
+    border: 1px solid rgba(255,255,255,.45);
+
+    border-radius: 22px;
+
+    box-shadow:
+
+        0 10px 30px rgba(0,0,0,.12);
+
+    transition: all .25s ease;
+
+}
+
+.card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+
+        0 18px 40px rgba(0,0,0,.16);
+
+}
+
+.card-header {
+
+    background: transparent !important;
+
+    border-bottom: 1px solid rgba(0,0,0,.08);
+
+    font-weight: 700;
+
+    font-size: 1.05rem;
+
+}
+
+.card-footer {
+
+    background: transparent !important;
+
+    border-top: 1px solid rgba(0,0,0,.08);
+
+}
+
+/* ==========================================================
+   BUTTONS
+========================================================== */
+
+.btn {
+
+    border-radius: 12px;
+
+    transition: .2s;
+
+    font-weight: 600;
+
+}
+
+.btn-success {
+
+    background: linear-gradient(
+
+        135deg,
+
+        #1d976c,
+
+        #2dbb73
+
+    );
+
+    border: none;
+
+}
+
+.btn-success:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+
+        0 10px 22px rgba(40,167,69,.30);
+
+}
+
+.btn-warning {
+
+    border: none;
+
+}
+
+.btn-danger {
+
+    border: none;
+
+}
+
+/* ==========================================================
+   FORMS
+========================================================== */
+
+.form-control,
+
+.form-select {
+
+    border-radius: 12px;
+
+    border: 1px solid rgba(0,0,0,.12);
+
+    min-height: 48px;
+
+    background: rgba(255,255,255,.88);
+
+}
+
+.form-control:focus,
+
+.form-select:focus {
+
+    border-color: #27ae60;
+
+    box-shadow:
+
+        0 0 0 .2rem rgba(39,174,96,.18);
+
+}
+
+label {
+
+    font-weight: 600;
+
+    margin-bottom: 6px;
+
+}
+
+/* ==========================================================
+   TABLES
+========================================================== */
+
+.table {
+
+    background: transparent;
+
+}
+
+.table thead {
+
+    background: rgba(255,255,255,.55);
+
+}
+
+.table th {
+
+    font-weight: 700;
+
+}
+
+.table td,
+
+.table th {
+
+    vertical-align: middle;
+
+}
+
+/* ==========================================================
+   ALERTS
+========================================================== */
+
+.alert {
+
+    border: none;
+
+    border-radius: 14px;
+
+}
+
+/* ==========================================================
+   SEARCH
+========================================================== */
+
+.input-group {
+
+    overflow: hidden;
+
+    border-radius: 12px;
+
+}
+
+/* ==========================================================
+   BADGES
+========================================================== */
+
+.badge {
+
+    border-radius: 20px;
+
+    padding: 8px 14px;
+
+}
+
+/* ==========================================================
+   SCROLLBAR
+========================================================== */
+
+::-webkit-scrollbar {
+
+    width: 10px;
+
+}
+
+::-webkit-scrollbar-track {
+
+    background: rgba(255,255,255,.25);
+
+}
+
+::-webkit-scrollbar-thumb {
+
+    background: rgba(25,135,84,.6);
+
+    border-radius: 20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+
+    background: rgba(25,135,84,.9);
+
+}
+
+/* ==========================================================
+   ANIMATION
+========================================================== */
+
+.card,
+
+.btn,
+
+.form-control,
+
+.form-select {
+
+    transition: all .25s ease;
+
+}
